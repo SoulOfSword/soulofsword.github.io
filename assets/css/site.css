@@ -1,71 +1,262 @@
-:root{
-  --bg: #0a0d18;
-  --panel: #0e1222;
-  --surface: #121833;
-  --text: #eaf0ff;
-  --muted: #9bacd6;
-  --link: #a9c7ff;
-  --accent: #8bd3ff;
-  --border: #1f294a;
+:root {
+    --bg: #0a0d18;
+    --panel: #0e1222;
+    --surface: #121833;
+    --text: #eaf0ff;
+    --muted: #9bacd6;
+    --link: #a9c7ff;
+    --accent: #8bd3ff;
+    --border: #1f294a;
 }
-*{box-sizing:border-box}
-html,body{margin:0;padding:0}
-body{
-  background:
-    radial-gradient(900px 500px at -10% -10%, #15204a 0%, rgba(0,0,0,0) 60%),
-    radial-gradient(700px 500px at 110% -20%, #1a1240 0%, rgba(0,0,0,0) 60%),
-    var(--bg);
-  color:var(--text);
-  font:16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+* {
+    box-sizing: border-box;
 }
-a{color:var(--link); text-decoration:none}
-a:hover{text-decoration:underline}
-.sidebar{
-  position:fixed; top:0; left:0; bottom:0; width:280px; padding:24px; background:rgba(14,18,34,0.8);
-  border-right:1px solid var(--border); backdrop-filter: blur(10px);
-  display:flex; flex-direction:column; align-items:flex-start; gap:8px;
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
-.sidebar .avatar{width:96px; height:96px; border-radius:50%; object-fit:cover; border:2px solid var(--border)}
-.sidebar .tagline{margin-top:-8px; color:var(--muted)}
-.sidebar .meta{color:var(--muted); margin:0}
-.sidebar .links a{display:inline-block; margin-right:10px; margin-top:6px}
-.sidebar .nav{margin-top:12px}
-.sidebar .nav a{display:block; padding:6px 0; color:var(--muted)}
-.sidebar footer{margin-top:auto; color:var(--muted); font-size:12px}
+body {
+    background:
+        radial-gradient(
+            900px 500px at -10% -10%,
+            #15204a 0%,
+            rgba(0, 0, 0, 0) 60%
+        ),
+        radial-gradient(
+            700px 500px at 110% -20%,
+            #1a1240 0%,
+            rgba(0, 0, 0, 0) 60%
+        ),
+        var(--bg);
+    color: var(--text);
+    font:
+        16px/1.6 Inter,
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+}
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    padding: 24px;
+    background: rgba(14, 18, 34, 0.8);
+    border-right: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+.sidebar .avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border);
+}
+.sidebar .tagline {
+    margin-top: -8px;
+    color: var(--muted);
+}
+.sidebar .meta {
+    color: var(--muted);
+    margin: 0;
+}
+.sidebar .links a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+.sidebar .nav {
+    margin-top: 12px;
+}
+.sidebar .nav a {
+    display: block;
+    padding: 6px 0;
+    color: var(--muted);
+}
+.sidebar footer {
+    margin-top: auto;
+    color: var(--muted);
+    font-size: 12px;
+}
 
-.content{margin-left:280px; padding:28px; max-width:1100px}
-.content.narrow{max-width:780px}
-.card{
-  background: var(--surface);
-  border:1px solid var(--border);
-  border-radius:16px;
-  padding:20px 22px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  margin-bottom:18px;
+.content {
+    margin-left: 280px;
+    padding: 28px;
+    max-width: 1100px;
 }
-.grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:16px}
-.tile{
-  background: var(--surface);
-  border:1px solid var(--border);
-  border-radius:16px;
-  overflow:hidden;
+.content.narrow {
+    max-width: 780px;
 }
-.tile img{width:100%; height:160px; object-fit:cover; display:block; border-bottom:1px solid var(--border)}
-.tile h3{margin:14px 14px 6px}
-.tile p{margin:0 14px 12px}
-.small{font-size:13px; color:var(--muted)}
-.bullets{columns: 2; column-gap: 24px}
-.bullets li{break-inside: avoid; margin-bottom:6px}
-.bullets.muted{color:var(--muted)}
-h1,h2,h3{line-height:1.2}
-h1{font-size:2rem} h2{font-size:1.5rem} h3{font-size:1.15rem}
-.muted{color:var(--muted)}
-.subpage .back{position:fixed; left:12px; top:12px; background:var(--panel); border:1px solid var(--border); padding:6px 10px; border-radius:8px}
-.btn{display:inline-block; padding:8px 12px; background:var(--accent); color:#08101f; border-radius:10px; margin-right:8px}
-.btn.ghost{background:transparent; border:1px solid var(--border); color:var(--text)}
-@media (max-width: 860px){
-  .sidebar{position:static; width:auto; border-right:none; flex-direction:row; align-items:center; gap:12px}
-  .sidebar .nav{display:none}
-  .content{margin-left:0}
-  .bullets{columns:1}
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 22px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin-bottom: 18px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+.tile {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+}
+.tile img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid var(--border);
+}
+.tile h3 {
+    margin: 14px 14px 6px;
+}
+.tile p {
+    margin: 0 14px 12px;
+}
+.small {
+    font-size: 13px;
+    color: var(--muted);
+}
+.bullets {
+    columns: 2;
+    column-gap: 24px;
+}
+.bullets li {
+    break-inside: avoid;
+    margin-bottom: 6px;
+}
+.bullets.muted {
+    color: var(--muted);
+}
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.15rem;
+}
+.muted {
+    color: var(--muted);
+}
+.subpage .back {
+    position: fixed;
+    left: 12px;
+    top: 12px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background: var(--accent);
+    color: #08101f;
+    border-radius: 10px;
+    margin-right: 8px;
+}
+.btn.ghost {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+@media (max-width: 860px) {
+    .sidebar {
+        position: static;
+        width: auto;
+        border-right: none;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+    }
+    .sidebar .nav {
+        display: none;
+    }
+    .content {
+        margin-left: 0;
+    }
+    .bullets {
+        columns: 1;
+    }
+}
+
+/* University logo in the sidebar */
+.sidebar .uni-logo {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+.sidebar .uni-logo img {
+    max-width: 160px; /* adjust to taste */
+    height: auto;
+    display: block;
+    opacity: 0.95; /* soften against dark bg */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.35));
+}
+@media (max-width: 860px) {
+    /* On small screens the sidebar becomes a top bar; hide the big logo */
+    .sidebar .uni-logo {
+        display: none;
+    }
+}
+
+/* Right-side decorative galaxy background */
+.bg-galaxy {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(45vw, 560px); /* how much of the right side it occupies */
+    background: url("/assets/img/galaxy.jpg") center right / cover no-repeat;
+    opacity: 0.25; /* visibility; tweak 0.15–0.35 */
+    pointer-events: none; /* don't block clicks */
+    z-index: 0;
+}
+/* Make sure main content sits above it */
+.content {
+    position: relative;
+    z-index: 1;
+}
+.sidebar {
+    position: fixed;
+    z-index: 2;
+} /* yours likely already fixed */
+@media (max-width: 1100px) {
+    .bg-galaxy {
+        width: 40vw;
+        opacity: 0.18;
+    }
+}
+@media (max-width: 860px) {
+    .bg-galaxy {
+        display: none;
+    } /* optional: hide on phones */
 }
