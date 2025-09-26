@@ -218,7 +218,7 @@ h3 {
     max-width: 160px; /* adjust to taste */
     height: auto;
     display: block;
-    opacity: 0.95; /* soften against dark bg */
+    opacity: 0.45; /* soften against dark bg */
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.35));
 }
 @media (max-width: 860px) {
@@ -234,9 +234,11 @@ h3 {
     top: 0;
     right: 0;
     bottom: 0;
-    width: min(45vw, 560px); /* how much of the right side it occupies */
+    width: min(52vw, 680px); /* how much of the right side it occupies */
     background: url("/assets/img/galaxy.jpg") center right / cover no-repeat;
-    opacity: 0.25; /* visibility; tweak 0.15–0.35 */
+    background-position: 70% center;
+    filter: brightness(1.55) contrast(1.06) saturate(1.08);
+    opacity: 0.5; /* visibility; tweak 0.15–0.35 */
     pointer-events: none; /* don't block clicks */
     z-index: 0;
 }
