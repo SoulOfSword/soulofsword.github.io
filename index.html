@@ -1,5 +1,21 @@
 <!doctype html>
 <html lang="en">
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [
+                    ["$", "$"],
+                    ["\\(", "\\)"],
+                ],
+            },
+            svg: { fontCache: "global" },
+        };
+    </script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+        async
+    ></script>
+
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -100,24 +116,31 @@
                 </p>
             </section>
 
-            <!--<section id="highlights" class="grid">
+            <section id="highlights" class="grid">
                 <article class="tile">
                     <img
-                        src="/assets/img/highlight-kinematics.jpg"
-                        alt="Kinematics project image"
+                        src="/assets/img/thesis-image.jpg"
+                        alt="Thesis project image"
                     />
-                    <h3>Kinematic modeling in 3D</h3>
+                    <h3>Bachelor's Thesis</h3>
                     <p>
-                        Fast, robust fitting of rotation curves from data cubes,
-                        without relying on 2D velocity fields.
+                        Investigating the dependence of the
+                        $j_\mathrm{bar}-\mathrm{M}_\mathrm{bar}-f_\mathrm{gas}
+                        relationship on different star formation laws.$
                     </p>
                     <p class="small">
-                        <a href="#">Project page</a> · <a href="#">Paper</a> ·
-                        <a href="#">Code</a>
+                        <a href="https://fse.studenttheses.ub.rug.nl/33339/"
+                            >Thesis</a
+                        >
+                        ·
+                        <a
+                            href="https://github.com/SoulOfSword/thesis_project_inisideout_model"
+                            >Code</a
+                        >
                     </p>
                 </article>
 
-                <article class="tile">
+                <!--<article class="tile">
                     <img
                         src="/assets/img/highlight-winds.jpg"
                         alt="Galactic winds image"
@@ -141,8 +164,8 @@
                         matter content across epochs.
                     </p>
                     <p class="small"><a href="#">Selected papers</a></p>
-                </article>
-            </section>-->
+                </article>-->
+            </section>
 
             <section id="about" class="card">
                 <h2>About me</h2>
