@@ -1,95 +1,156 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Your Name — Astrophysicist</title>
-    <meta name="description" content="Galaxy evolution • gas kinematics • ML for astronomy" />
-    <link rel="stylesheet" href="/assets/css/site.css" />
-  </head>
-  <body>
-    <aside class="sidebar">
-      <img class="avatar" src="/assets/img/profile.jpg" alt="Profile photo" />
-      <h1>Your Name</h1>
-      <p class="tagline">Astrophysicist</p>
-      <p class="meta">Your Institute<br/>City, Country</p>
-      <div class="links">
-        <a href="https://ui.adsabs.harvard.edu" target="_blank" rel="noopener">ADS</a>
-        <a href="/assets/files/cv.pdf" target="_blank" rel="noopener">CV</a>
-        <a href="mailto:you@example.com">Email</a>
-        <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
-      </div>
-      <nav class="nav">
-        <a href="#research">Research</a>
-        <a href="#interests">Interests</a>
-        <a href="#highlights">Highlights</a>
-        <a href="#about">About</a>
-      </nav>
-      <footer>&copy; <span id="y"></span> Your Name</footer>
-    </aside>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Your Name — Astrophysicist</title>
+        <meta
+            name="description"
+            content="Galaxy evolution • gas kinematics • ML for astronomy"
+        />
+        <link rel="stylesheet" href="/assets/css/site.css" />
+    </head>
+    <body>
+        <aside class="sidebar">
+            <img
+                class="avatar"
+                src="/assets/img/profile.jpg"
+                alt="Profile photo"
+            />
+            <h1>Your Name</h1>
+            <p class="tagline">Astrophysicist</p>
+            <p class="meta">Your Institute<br />City, Country</p>
+            <div class="links">
+                <a
+                    href="https://ui.adsabs.harvard.edu"
+                    target="_blank"
+                    rel="noopener"
+                    >ADS</a
+                >
+                <a href="/assets/files/cv.pdf" target="_blank" rel="noopener"
+                    >CV</a
+                >
+                <a href="mailto:you@example.com">Email</a>
+                <a
+                    href="https://github.com/YOUR-USERNAME"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub</a
+                >
+            </div>
+            <nav class="nav">
+                <a href="#research">Research</a>
+                <a href="#interests">Interests</a>
+                <a href="#highlights">Highlights</a>
+                <a href="#about">About</a>
+            </nav>
+            <footer>&copy; <span id="y"></span> Your Name</footer>
+        </aside>
 
-    <main class="content">
-      <section id="intro" class="card">
-        <h2>Welcome</h2>
-        <p>I study how galaxies form and evolve using multiwavelength observations and physically grounded models. I focus on the physics and kinematics of gaseous matter—how gas cycles through the interstellar and circumgalactic media, and what its motion reveals about the assembly history of galaxies.</p>
-      </section>
+        <main class="content">
+            <section id="intro" class="card">
+                <h2>Welcome!</h2>
+                <p>
+                    I am a Master's student specializing in galaxy formation and
+                    evolution. I study how galaxies form and evolve using galaxy
+                    evolution models to predict scaling relations and comparing
+                    them to observations.
+                </p>
+            </section>
 
-      <section id="interests" class="card">
-        <h2>Research interests</h2>
-        <ul class="bullets">
-          <li>Galaxy kinematics and dynamics</li>
-          <li>Galactic outflows and feedback</li>
-          <li>Interstellar &amp; Circumgalactic Media</li>
-          <li>Radio/sub-mm emission lines</li>
-          <li>Optical/IR spectroscopy</li>
-          <li>Machine learning for astrophysics</li>
-        </ul>
+            <section id="interests" class="card">
+                <h2>Research interests</h2>
+                <ul class="bullets">
+                    <li>Galaxy kinematics and dynamics</li>
+                    <li>Galactic outflows and feedback</li>
+                    <li>Interstellar &amp; Circumgalactic Media</li>
+                    <li>Radio/sub-mm emission lines</li>
+                    <li>Optical/IR spectroscopy</li>
+                    <li>Machine learning for astrophysics</li>
+                </ul>
 
-        <h3>Frequent collaborators</h3>
-        <ul class="bullets muted">
-          <li>Collaborator A (Institute)</li>
-          <li>Collaborator B (Institute)</li>
-          <li>Collaborator C (Institute)</li>
-        </ul>
-      </section>
+                <h3>Frequent collaborators</h3>
+                <ul class="bullets muted">
+                    <li>Collaborator A (Institute)</li>
+                    <li>Collaborator B (Institute)</li>
+                    <li>Collaborator C (Institute)</li>
+                </ul>
+            </section>
 
-      <section id="research" class="card">
-        <h2>My research</h2>
-        <p>Short overview of your current projects and group. Mention the telescopes/surveys and techniques you use (e.g., ALMA, VLA, MUSE; kinematic modeling, GP regression, Bayesian inference).</p>
-        <p><a class="btn" href="/publications.html">Publications &rarr;</a> <a class="btn ghost" href="/software.html">Software &rarr;</a></p>
-      </section>
+            <section id="research" class="card">
+                <h2>My research</h2>
+                <p>
+                    Short overview of your current projects and group. Mention
+                    the telescopes/surveys and techniques you use (e.g., ALMA,
+                    VLA, MUSE; kinematic modeling, GP regression, Bayesian
+                    inference).
+                </p>
+                <p>
+                    <a class="btn" href="/publications.html"
+                        >Publications &rarr;</a
+                    >
+                    <a class="btn ghost" href="/software.html"
+                        >Software &rarr;</a
+                    >
+                </p>
+            </section>
 
-      <section id="highlights" class="grid">
-        <article class="tile">
-          <img src="/assets/img/highlight-kinematics.jpg" alt="Kinematics project image">
-          <h3>Kinematic modeling in 3D</h3>
-          <p>Fast, robust fitting of rotation curves from data cubes, without relying on 2D velocity fields.</p>
-          <p class="small"><a href="#">Project page</a> · <a href="#">Paper</a> · <a href="#">Code</a></p>
-        </article>
+            <section id="highlights" class="grid">
+                <article class="tile">
+                    <img
+                        src="/assets/img/highlight-kinematics.jpg"
+                        alt="Kinematics project image"
+                    />
+                    <h3>Kinematic modeling in 3D</h3>
+                    <p>
+                        Fast, robust fitting of rotation curves from data cubes,
+                        without relying on 2D velocity fields.
+                    </p>
+                    <p class="small">
+                        <a href="#">Project page</a> · <a href="#">Paper</a> ·
+                        <a href="#">Code</a>
+                    </p>
+                </article>
 
-        <article class="tile">
-          <img src="/assets/img/highlight-winds.jpg" alt="Galactic winds image">
-          <h3>Galactic winds in the local Universe</h3>
-          <p>Neutral atomic and molecular gas outflows in the Milky Way and Magellanic Clouds.</p>
-          <p class="small"><a href="#">Selected papers</a></p>
-        </article>
+                <article class="tile">
+                    <img
+                        src="/assets/img/highlight-winds.jpg"
+                        alt="Galactic winds image"
+                    />
+                    <h3>Galactic winds in the local Universe</h3>
+                    <p>
+                        Neutral atomic and molecular gas outflows in the Milky
+                        Way and Magellanic Clouds.
+                    </p>
+                    <p class="small"><a href="#">Selected papers</a></p>
+                </article>
 
-        <article class="tile">
-          <img src="/assets/img/highlight-scaling.jpg" alt="Scaling relations image">
-          <h3>Scaling relations &amp; dark matter</h3>
-          <p>Connecting luminous mass, angular momentum, and dark matter content across epochs.</p>
-          <p class="small"><a href="#">Selected papers</a></p>
-        </article>
-      </section>
+                <article class="tile">
+                    <img
+                        src="/assets/img/highlight-scaling.jpg"
+                        alt="Scaling relations image"
+                    />
+                    <h3>Scaling relations &amp; dark matter</h3>
+                    <p>
+                        Connecting luminous mass, angular momentum, and dark
+                        matter content across epochs.
+                    </p>
+                    <p class="small"><a href="#">Selected papers</a></p>
+                </article>
+            </section>
 
-      <section id="about" class="card">
-        <h2>About me</h2>
-        <p>Write a short narrative bio (education, moves across institutes/countries, current position). Keep it personal but concise.</p>
-      </section>
-    </main>
+            <section id="about" class="card">
+                <h2>About me</h2>
+                <p>
+                    Write a short narrative bio (education, moves across
+                    institutes/countries, current position). Keep it personal
+                    but concise.
+                </p>
+            </section>
+        </main>
 
-    <script>
-      document.getElementById("y").textContent = new Date().getFullYear();
-    </script>
-  </body>
+        <script>
+            document.getElementById("y").textContent = new Date().getFullYear();
+        </script>
+    </body>
 </html>
