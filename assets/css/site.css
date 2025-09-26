@@ -288,28 +288,28 @@ h3 {
 }
 
 /* 3-image row inside the About card (no wrapper required) */
-#about > img {
+/*#about > img {
     display: inline-block;
-    width: calc((100% - 24px) / 3); /* 3 across with 12px gaps */
-    height: 140px; /* make them uniform */
-    object-fit: cover; /* crop to fit */
-    margin: 12px 12px 18px 0; /* right gap between images */
+    width: calc((100% - 24px) / 3);
+    height: 140px;
+    object-fit: cover;
+    margin: 12px 12px 18px 0;
     vertical-align: top;
 
     border-radius: 10px;
     border: 1px solid var(--border);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    background: #000; /* in case of transparent edges */
+    background: #000;
 }
 #about > img:nth-of-type(3) {
     margin-right: 0;
-} /* remove gap after the 3rd */
+} */
 
 /* Mobile: stack them full-width */
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
     #about > img {
         width: 100%;
         height: auto;
         margin: 10px 0;
     }
-}
+}*/
