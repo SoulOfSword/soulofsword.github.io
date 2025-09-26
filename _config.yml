@@ -1,3 +1,14 @@
-title: My Site
-description: Personal website
-theme: jekyll-theme-cayman
+title: "Andrea Costa — Astrophysicist"
+description: "Galaxy Formation and Evolution"
+url: "https://soulofsword.github.io"
+baseurl: ""
+author:
+  name: "Andrea Costa"
+  email: "andrea20023003@gmail.com"
+  affiliation: "Kapteyn Astronomical Institute, University of Groningen"
+  role: "Astrophysicist"
+  location: "Groningen, the Netherlands"
+  orcid: "0000-0001-7616-4210"
+
+markdown: kramdown
+permalink: pretty
