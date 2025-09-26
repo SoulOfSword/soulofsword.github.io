@@ -286,3 +286,33 @@ h3 {
         display: none;
     } /* optional on phones */
 }
+
+.about-gallery {
+    display: flex;
+    gap: 12px;
+    margin: 12px 0 20px; /* space above/below the row */
+    justify-content: center; /* center the whole row */
+}
+
+.about-gallery img {
+    width: 100%;
+    max-width: 160px; /* set consistent size */
+    height: 110px; /* uniform height */
+    object-fit: cover; /* crops edges if aspect ratio differs */
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: #000; /* in case of transparent edges */
+}
+
+/* On very small screens: stack instead of row */
+@media (max-width: 600px) {
+    .about-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-gallery img {
+        max-width: 90%;
+        height: auto;
+    }
+}
