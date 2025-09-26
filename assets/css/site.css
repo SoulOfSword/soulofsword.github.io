@@ -241,10 +241,10 @@ h3 {
     background-position: 60% center;
 
     /* brighten + slight pop */
-    filter: brightness(1.55) contrast(1.06) saturate(1.08);
+    filter: none /*brightness(1.55) contrast(1.06) saturate(1.08)*/;
 
     /* a bit more visible than before */
-    opacity: 0.7;
+    opacity: 0.2;
 
     pointer-events: none;
     z-index: 0;
