@@ -7,6 +7,7 @@
     --link: #a9c7ff;
     --accent: #8bd3ff;
     --border: #1f294a;
+    --sidebar-w: 280px;
 }
 * {
     box-sizing: border-box;
@@ -51,7 +52,7 @@ a:hover {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 280px;
+    width: var(--sidebar-w);
     padding: 24px;
     background: rgba(14, 18, 34, 0.8);
     border-right: 1px solid var(--border);
@@ -96,7 +97,7 @@ a:hover {
 }
 
 .content {
-    margin-left: 280px;
+    margin-left: var(--sidebar-w);
     padding: 28px;
     max-width: 1100px;
 }
@@ -231,20 +232,13 @@ h3 {
 /* Right-side decorative galaxy background */
 .bg-galaxy {
     position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    /* top | right | bottom | left */
+    inset: 0 0 0 var(--sidebar-w); /* left edge = sidebar width */
 
-    /* make the strip wider so we see more of the image */
-    width: min(52vw, 680px);
-
-    /* nudge the image LEFT within the strip so it isn't cut off */
     background-image: url("/assets/img/galaxy.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* 70% horizontally moves the focal area leftward;
-     try 60–80% until it looks perfect on your photo */
-    background-position: 30% center;
+    background-position: 60% center;
 
     /* brighten + slight pop */
     filter: brightness(1.55) contrast(1.06) saturate(1.08);
@@ -257,7 +251,7 @@ h3 {
 }
 
 /* Soft fade on the left edge so it blends into the page */
-.bg-galaxy::after {
+.bg-galaxy::before {
     content: "";
     position: absolute;
     inset: 0;
