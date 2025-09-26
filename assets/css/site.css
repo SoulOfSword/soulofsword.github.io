@@ -234,15 +234,43 @@ h3 {
     top: 0;
     right: 0;
     bottom: 0;
-    width: min(52vw, 680px); /* how much of the right side it occupies */
-    background: url("/assets/img/galaxy.jpg") center right / cover no-repeat;
+
+    /* make the strip wider so we see more of the image */
+    width: min(52vw, 680px);
+
+    /* nudge the image LEFT within the strip so it isn't cut off */
+    background-image: url("/assets/img/galaxy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* 70% horizontally moves the focal area leftward;
+     try 60–80% until it looks perfect on your photo */
     background-position: 70% center;
+
+    /* brighten + slight pop */
     filter: brightness(1.55) contrast(1.06) saturate(1.08);
-    opacity: 0.5; /* visibility; tweak 0.15–0.35 */
-    pointer-events: none; /* don't block clicks */
+
+    /* a bit more visible than before */
+    opacity: 0.5;
+
+    pointer-events: none;
     z-index: 0;
 }
-/* Make sure main content sits above it */
+
+/* Soft fade on the left edge so it blends into the page */
+.bg-galaxy::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* dark-to-transparent fade from the left side of the strip */
+    background: linear-gradient(
+        to left,
+        rgba(10, 13, 24, 0) 0%,
+        rgba(10, 13, 24, 0.4) 40%,
+        rgba(10, 13, 24, 0.85) 85%
+    );
+}
+
+/* ensure layers are correct */
 .content {
     position: relative;
     z-index: 1;
@@ -250,15 +278,16 @@ h3 {
 .sidebar {
     position: fixed;
     z-index: 2;
-} /* yours likely already fixed */
+}
+
 @media (max-width: 1100px) {
     .bg-galaxy {
-        width: 40vw;
-        opacity: 0.18;
+        width: 44vw;
+        opacity: 0.38;
     }
 }
 @media (max-width: 860px) {
     .bg-galaxy {
         display: none;
-    } /* optional: hide on phones */
+    } /* optional on phones */
 }
