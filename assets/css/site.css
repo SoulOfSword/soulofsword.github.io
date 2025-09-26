@@ -214,6 +214,7 @@ h3 {
 .sidebar .uni-logo {
     margin-top: auto;
     margin-bottom: 12px;
+    align-self: center;
 }
 .sidebar .uni-logo img {
     max-width: 160px; /* adjust to taste */
