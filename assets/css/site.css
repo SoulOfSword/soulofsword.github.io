@@ -212,7 +212,7 @@ h3 {
 
 /* University logo in the sidebar */
 .sidebar .uni-logo {
-    margin-top: 24px;
+    margin-top: auto;
     margin-bottom: 12px;
 }
 .sidebar .uni-logo img {
