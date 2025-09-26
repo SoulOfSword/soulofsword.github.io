@@ -251,18 +251,18 @@ h3 {
 }
 
 /* Soft fade on the left edge so it blends into the page */
-.bg-galaxy::before {
+/*.bg-galaxy::before {
     content: "";
     position: absolute;
     inset: 0;
     /* dark-to-transparent fade from the left side of the strip */
-    background: linear-gradient(
+    /*background: linear-gradient(
         to left,
         rgba(10, 13, 24, 0) 0%,
         rgba(10, 13, 24, 0.4) 40%,
-        rgba(10, 13, 24, 0.85) 85%
+        rgba(10, 13, 24, 0.85) 85%*/
     );
-}
+}*/
 
 /* ensure layers are correct */
 .content {
