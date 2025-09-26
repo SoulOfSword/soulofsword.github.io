@@ -287,32 +287,29 @@ h3 {
     } /* optional on phones */
 }
 
-.about-gallery {
-    display: flex;
-    gap: 12px;
-    margin: 12px 0 20px; /* space above/below the row */
-    justify-content: center; /* center the whole row */
-}
+/* 3-image row inside the About card (no wrapper required) */
+#about > img {
+    display: inline-block;
+    width: calc((100% - 24px) / 3); /* 3 across with 12px gaps */
+    height: 140px; /* make them uniform */
+    object-fit: cover; /* crop to fit */
+    margin: 12px 12px 18px 0; /* right gap between images */
+    vertical-align: top;
 
-.about-gallery img {
-    width: 100%;
-    max-width: 160px; /* set consistent size */
-    height: 110px; /* uniform height */
-    object-fit: cover; /* crops edges if aspect ratio differs */
     border-radius: 10px;
     border: 1px solid var(--border);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     background: #000; /* in case of transparent edges */
 }
+#about > img:nth-of-type(3) {
+    margin-right: 0;
+} /* remove gap after the 3rd */
 
-/* On very small screens: stack instead of row */
+/* Mobile: stack them full-width */
 @media (max-width: 600px) {
-    .about-gallery {
-        flex-direction: column;
-        align-items: center;
-    }
-    .about-gallery img {
-        max-width: 90%;
+    #about > img {
+        width: 100%;
         height: auto;
+        margin: 10px 0;
     }
 }
