@@ -1,13 +1,39 @@
-# Astro Profile Site — Inspired Starter
+# Personal Website — Andrea Costa
 
-This is a GitHub Pages starter with a layout and section structure **inspired by** typical astrophysicist personal sites (single-page home with anchors + separate publications/software pages). It avoids copying any source and uses original styles.
+This repository contains the source code for my personal academic website:
+👉 [soulofsword.github.io](https://soulofsword.github.io/)
 
-## How to deploy
-1. Rename the folder to `YOUR-USERNAME.github.io` and update `_config.yml`.
-2. Replace `assets/img/profile.jpg` and `assets/files/cv.pdf`.
-3. Commit & push to GitHub, then enable Pages from the repository settings.
+The site is hosted via **GitHub Pages** and built with plain HTML/CSS (no framework).
+It serves as my professional homepage and includes information about my research and publications.
 
-## Edit
-- `index.html` — Home with sections: Welcome, Research interests, My research, Highlights, About.
-- `publications.html` — Selected papers (link to ADS for full list).
-- `software.html` — Project cards.
+---
+
+## Structure
+
+- `index.html` — homepage with sections (welcome, research, highlights, about).
+- `publications.html` — selected papers (links to ADS for full list).
+- `software.html` — software projects and code releases.
+- `assets/css/site.css` — styles.
+- `assets/img/` — profile photo, logos, and gallery images.
+- `assets/files/` — CV and other downloadable files.
+
+---
+
+## Editing
+
+- Update content directly in the `.html` files.
+- Replace images in `assets/img/`.
+- Replace `assets/files/cv.pdf` with your CV.
+- Customize styling in `assets/css/site.css`.
+
+---
+
+## Credits
+
+- Background galaxy images from [NASA/ESA Hubble Space Telescope](https://hubblesite.org/) and other public-domain sources.
+
+---
+
+## License
+
+The site source code (HTML/CSS) is released under the MIT License.
